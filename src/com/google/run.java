@@ -1,5 +1,6 @@
 package com.google;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -26,6 +27,20 @@ public class run {
                     break;
                 case "5":
                     compositorAnimalAge.compositorAnimalAge(array);
+                    break;
+                case "7":
+                    try {
+                        saveAnimalInformation.saveAnimalInformation(array);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+                case "8":
+                    try {
+                        readAnimalInformation.readAnimalInformation(array);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                     break;
                 case "6":
                     System.out.println("谢谢使用，再见!");
