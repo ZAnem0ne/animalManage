@@ -1,0 +1,2 @@
+Animal{type='1', gender='1', age='1', name='1'}
+Animal{type='2', gender='2', age='2', name='2'}
