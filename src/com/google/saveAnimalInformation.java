@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class saveAnimalInformation {
+    //写入信息
     public void saveAnimalInformation() throws IOException {
         File file = new File("animalInformation.txt");
         if (!file.exists()) {
