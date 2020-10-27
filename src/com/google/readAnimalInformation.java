@@ -22,27 +22,6 @@ public class readAnimalInformation {
             line = br.readLine();
             array.add(animal);
         }
-//            if (line.indexOf(";") > 0) {
-//                new Animal().setType(line);
-//                line = br.readLine();
-//                if (line.indexOf(";") > 0) {
-//                    new Animal().setGender(line);
-//                    line = br.readLine();
-//                    if (line.indexOf(";") > 0) {
-//                        new Animal().setAge(line);
-//                        line = br.readLine();
-//                        if (line.indexOf(";") > 0) {
-//                            new Animal().setName(line);
-//                            line = br.readLine();
-//                        }
-//                    }
-//                }
-//            }
-//        while((line2=br.readLine())!=null){
-//            array.add(line1);
-//        }
-
-        //释放资源
         br.close();
 
     }
