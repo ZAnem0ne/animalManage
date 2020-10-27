@@ -19,7 +19,7 @@ public class saveAnimalInformation {
         FileUtils.writeLines(file, Collections.singleton(array.toString()));*/
         BufferedWriter bw = new BufferedWriter(new FileWriter("animalInformation.txt"));
         for (Animal ani : array) {
-          bw.write(String.valueOf(ani));
+          bw.write(ani.getType()+"\n"+ani.getGender()+"\n"+ani.getAge()+"\n"+ ani.getName());
           bw.newLine();
           bw.flush();
         }
