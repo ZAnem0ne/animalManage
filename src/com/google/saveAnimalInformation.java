@@ -12,11 +12,6 @@ import java.util.Collections;
 public class saveAnimalInformation {
     //储存animal信息
     public static void saveAnimalInformation(ArrayList<Animal> array) throws IOException {
-/*        File file = new File("animalInformation.txt");
-        if (!file.exists()) {
-            file.createNewFile();
-        }
-        FileUtils.writeLines(file, Collections.singleton(array.toString()));*/
         BufferedWriter bw = new BufferedWriter(new FileWriter("animalInformation.txt"));
         for (Animal ani : array) {
           bw.write(ani.getType()+"\n"+ani.getGender()+"\n"+ani.getAge()+"\n"+ ani.getName());
