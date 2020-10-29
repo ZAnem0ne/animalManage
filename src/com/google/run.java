@@ -9,7 +9,7 @@ public class run {
         ArrayList<Animal> array = new ArrayList<Animal>();
         while (true) {
             System.out.println("======================欢迎来到animalManage系统======================");
-            System.out.println("1 添加新动物\n2 修改动物信息\n3 删除动物\n4 显示所有动物\n5 按照动物年龄排序显示动物\n6 退出程序\n输入进行程序的序号:");
+            System.out.println("1 添加新动物\n2 修改动物信息\n3 删除动物\n4 显示所有动物\n5 按照动物年龄排序显示动物\n6 退出程序\n7 保存所有动物信息\n8 读取现有动物信息\n输入进行程序的序号:");
             Scanner scanner = new Scanner(System.in);
             String numberIn = scanner.nextLine();
             switch (numberIn) {
